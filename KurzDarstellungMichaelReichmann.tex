@@ -1,0 +1,32 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[top=3cm, bottom=3cm, left=3cm, right=3cm]{geometry}
+\usepackage[ngerman]{babel}
+
+\input{extrapackages}
+\input{settings}
+
+\makeatletter
+\newcommand*{\version}[1]{\gdef\@version{#1}}
+\newcommand*{\@version}{0.0}
+\newcommand*{\institute}[1]{\gdef\@institute{#1}}
+
+\title{Untersuchung von Planaren und 3D Polykristallinen Diamantdetektoren bei Hohen Teilchenraten und mit Hoher Auflösung}
+\author{Michael Reichmann}
+\institute{Institut für Teilchen- und Astrophysik, Eidgenössische Technische Hochschule Zürich}
+\version{0.0}
+% \date{}
+
+\begin{document}
+
+{\flushright Version: \@version\par}
+{\Large\bfseries\@title\par}
+{\scshape\@author\par}
+{\slshape\@institute\par}\vspace*{1.5cm}
+
+Das Standardmodell ist eine der erfolgreichsten physikalischen Theorien. Dennoch existieren in der Teilchenphysik ungeklärte Fragen, wie das Hierarchieproblem oder der Ursprung von Dunkler Materie und Dunkler Energie, die dieses Modell nicht erklären kann. Um diesen Fragen auf den Grund zu gehen, wird der \ac{LHC} auf immer höhere Energien und Luminositäten ausgebaut.\par
+Mit steigender Luminosität erhöht sich auch die Anzahl an Teilchen, die die Detektoren durchdringen, enorm. Die dadurch entstehenden Strahlenschäden verringern die Leistungsfähigkeit der Detektoren bis zu einem Punkt an dem sie nicht mehr funktionieren. Im Falle des \ac{HL-LHC} müssten die innersten Schichten des Spurendetektors etwa alle zwölf Monate ausgetauscht werden, weswegen momentan sehr viel Forschung nach strahlenhärteren Materialien und Detektortypen betrieben wird.\par
+
+	
+	\input{acros}
+	
+\end{document}

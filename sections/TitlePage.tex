@@ -1,0 +1,34 @@
+\makeatletter
+
+\newcommand*{\version}[1]{\gdef\@version{#1}}
+\newcommand*{\@version}{0.0}
+
+\renewcommand*{\maketitle}{
+\begin{titlepage}
+
+	\begin{figure}[t]\centering
+		\begin{minipage}{0.45\linewidth}\flushleft
+			\ETHlogo[6cm]
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.45\linewidth}\flushright
+			\includegraphics[width=3.5cm]{IPA}
+		\end{minipage}
+		\hrule height 1pt\vspace*{2cm}
+	\end{figure}
+	
+	\centering
+	{\LARGE\scshape Research Plan}\\[15pt]
+	{\large for the Dissertation of \@author\\ born on $15^{\text{th}}$ December $1988$\\[10pt]
+	submitted in May 2018}\\[80pt]
+	{\huge\slshape\@title\par}
+	\vfill
+	
+	\flushright version \@version
+
+\end{titlepage}}
+
+
+
+
+
